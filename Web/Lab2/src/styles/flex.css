@@ -1,0 +1,131 @@
+html {
+    height: 100%;
+}
+body {
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+    color: black;
+    height: 100%;
+    height: fit-content;
+}
+
+header, footer {
+    background-color:#BBD0EE;
+    padding: 1%;
+    text-align: right;
+    font-size: 30px;
+    overflow: hidden;
+    outline: 2px solid #000;
+    position: relative;
+}
+
+footer p{
+    padding-left: 200px;
+}
+
+#x, #y {
+    background-color: white;
+    float: left;
+    color: black;
+    width: 10%;
+    font-size: 10px;
+    text-align: right;
+    outline-color: black;
+    outline-style: solid;
+    padding-right: 2px;
+    position: absolute;
+    height: 50px;
+    top: 50%;
+    margin-top: -25px;
+}
+
+#DivMain {
+    display: flex;
+    height: 100%;
+    outline: 2px solid #000;
+}
+
+#DivCentral {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+    outline: 2px solid #000;
+}
+
+#DivTop {
+    display: flex;
+    flex: 1;
+    outline: 2px solid #000;
+}
+
+#DivRight {
+    display:  flex;
+    flex-direction: column;
+    flex: 1;
+    outline: 2px solid #000;
+}
+
+aside, nav {
+    background-color:#E4EFD5;
+    padding: 2%;
+
+}
+
+aside {
+    text-align: right;
+    flex: 1;
+}
+
+nav {
+    text-align: left;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0 20px 20px;
+    vertical-align: top;
+}
+
+nav ul li a {
+    outline: none;
+    text-decoration: none;
+    color: black;
+}
+
+article {
+    background-color: white;
+    text-align: center;
+    padding: 2%;
+    color: black;
+    flex: 3;
+}
+
+article ul, article ol{
+    text-align: left;
+}
+
+section {
+    background-color: #FCE5D0;
+    padding: 5%;
+    text-align: left;
+    outline: 2px solid #000;
+    flex: 1;
+}
+
+footer {
+    font-size: 15px;
+/*     flex: 1; */
+}
+img{
+    max-width: 390px;
+}
+
+.image {
+    float: left;
+    padding: 1%;
+}
+
+@media (max-width: 600px) {
+    div {
+        flex-direction: column;
+    }
+}
